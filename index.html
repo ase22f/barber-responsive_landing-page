@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang='en'>
+   <head>
+      <meta charset='utf-8' />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title> BARBER: Best Hair Salon</title>
+      <link rel="stylesheet" href="./css/normalize.css" />
+      <link rel='stylesheet' href='css/font-awesome.min.css' />
+      <link rel='stylesheet' href='css/main.css' />  
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>grid system practice</title>
+      
+      <!-- this is some css style sheets  -->
+      <!-- <link rel='stylesheet' href='css/bootstrap.css'> -->
+      <link rel='stylesheet' href='css/font-awesome.min.css'>
+      <link rel='stylesheet' href='css/main.css'>  
+   </head>
+   <body>
+      <header class="header">
+         <div class="header__top">
+               
+            <div class="nav">
+               <!-- the menu button -->
+               <div id='nav-button' class="nav-btn">
+                  <button class="nav-btn__btn">
+                     <i class="fa fa-bars"></i>
+                  </button>
+               </div>
+
+               <!-- navigation list -->
+               <!-- <div class=''> -->
+                  <ul class="nav__list container">
+                     <li class="nav__list-item">
+                        <a class="nav__link" href="#">Home</a>
+                     </li>
+                     <li class="nav__list-item"><a class="nav__link" href="#about">About</a></li>
+                     <li class="nav__list-item"><a class="nav__link" href="#services">Services</a></li>
+                     <li class="nav__list-item"><a class="nav__link" href="#team">Team</a></li>
+                     <!-- <li class="nav__list-item"><a class="nav__link" href="#">testimonial</a></li> -->
+                     <!-- <li class="nav__list-item"><a class="nav__link" href="#">pricing</a></li> -->
+                     <li class="nav__list-item"><a class="nav__link" href="#booking">appointment</a></li>
+                     <li class="nav__list-item"><a class="nav__link" href="#subscribe">subscribe</a></li>
+                  </ul>
+               <!-- </div> -->
+            </div>
+            
+            <div id="logo-top" class="logo">
+               <div class="logo__glyph <!--fa fa-cut fa-4x-->"></div>
+               <div class="logo__brand">barber</div>
+               <div class="logo__phrase">best hair salon</div>
+            </div>
+
+         </div>
+         <!--this will need some work to get the slider up and working so for now give it a fixed height and proceed  -->
+         <div id="slider" class="slider">
+
+            <div class="slider__slide-list">
+
+               <div data-slide='0' class="slider__slide slider__slide--active">
+                  <img class="slider__slide-img" src="images/banner1.jpg" alt="">
+                  <div class="slider__slide-img-overlay"></div>
+                  <div class="slider__slide-text container">
+                     <p class="txt txt--md txt--bold txt--dark-bg txt--attach">we make your hair</p>
+                     <p class=" txt txt--xlg txt--bold txt--dark-bg txt--normal">we make your hair::1</p>
+                     <p class=" txt txt--xlg txt--bold txt--dark-bg txt--normal">looks perfect</p>
+                     <a href="#" class="link-glyph link-glyph--dark-bg">read more</a>
+                  </div>
+               </div>
+
+               <div data-slide='1' class="slider__slide">
+                  <img class="slider__slide-img" src="images/banner4.jpg" alt="">
+                  <div class="slider__slide-img-overlay"></div>
+                  <div class="slider__slide-text container">
+                     <p class="txt txt--md txt--bold txt--dark-bg txt--attach">we make your hair</p>
+                     <p class=" txt txt--xlg txt--bold txt--dark-bg txt--normal">we make your hair::2</p>
+                     <p class=" txt txt--xlg txt--bold txt--dark-bg txt--normal">looks perfect</p>
+                     <a href="#" class="link-glyph link-glyph--dark-bg">read more</a>
+                  </div>
+               </div>
+
+               <div data-slide='2' class="slider__slide">
+                  <img class="slider__slide-img" src="images/banner3.jpg" alt="">
+                  <div class="slider__slide-img-overlay"></div>
+                  <div class="slider__slide-text container">
+                     <p class="txt txt--md txt--bold txt--dark-bg txt--attach">we make your hair</p>
+                     <p class=" txt txt--xlg txt--bold txt--dark-bg txt--normal">we make your hair::3</p>
+                     <p class=" txt txt--xlg txt--bold txt--dark-bg txt--normal">looks perfect</p>
+                     <a href="#" class="link-glyph link-glyph--dark-bg">read more</a>
+                  </div>
+               </div>
+
+            </div>
+
+
+            <!-- slider control nodes -->
+            <div id="prev" class="slider__prev">
+               <img src="images/left.png" alt="left arrow">
+            </div>
+            <div id="next" class="slider__next">
+               <img src="images/right.png" alt="right arrow">
+            </div>
+            
+            <div class="slider__bullet-list">
+               <div class="slider__bullet slider__bullet--active" data-index='0'></div>
+               <div class="slider__bullet" data-index='1'></div>
+               <div class="slider__bullet" data-index='2'></div>
+            </div>
+
+         </div>
+      </header>
+      
+      <main>
+         <div id='about' class="titled about container">
+            <h3 class="titled__heading about__title">about us</h3>
+            <h4 class="about__welcoming">welcome to our hair salon shop</h4>
+            <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi maiores porro velit cupiditate, nihil quia, totam ut in labore ipsam dolor eligendi, maxime autem deserunt.</p>
+            
+            <a href="#" class="link-glyph">read more</a>
+            
+            <div class="about__images">
+               <div class="img  img--half-width">
+                  <img class="img__src" src="images/banner1.jpg" alt="banner1">
+                  <div class="img__overlay img__overlay--colored">expert in hair style</div>
+               </div>
+               <div class="img  img--half-width">
+                  <img class="img__src" src="images/banner4.jpg" alt="banner2">
+                  <div class="img__overlay img__overlay--colored">25 year experience</div>
+               </div>
+            </div>
+
+         </div>
+
+         <div id="services" class="titled services full-width">
+            <h3 class="titled__heading services__title">what we do</h3>
+            <div class="services__list">
+               
+               <!-- div.services__holder*6>.img.services__img>img^.services__manifest.card>h4.services__name.card__title{classic hair cut}+p.services__manifest__text.card__text{lorem15}+a.services__manifest-link.services__manifest-link--green.link.link--green[href="#"]{read more}>span.link__glyph -->
+
+               
+               <div class="services__holder">
+                  <div class="img services__img">
+                     <img class='img__src' src="images/banner1.jpg" alt="banner">
+                     <div class='img__overlay'></div>
+                  </div>
+                  
+                  <div class="services__manifest card card--dark">
+                     <h4 class="services__name card__title">classic hair cut</h4>
+                     <p class="services__manifest__text card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam, maxime vel non facere quas?</p>
+                     <a href="#" class="link-glyph link-glyph--green">read more<span class="link__glyph"></span></a>
+                  </div>
+               </div>
+               
+               <div class="services__holder">
+                  <div class="img services__img">
+                     <img class='img__src' src="images/banner4.jpg" alt="banner">
+                     <div class='img__overlay'></div>
+                  </div>
+                  
+                  <div class="services__manifest card card--dark">
+                     <h4 class="services__name card__title">classic hair cut</h4>
+                     <p class="services__manifest__text card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam, maxime vel non facere quas?</p>
+                     <a href="#" class="link-glyph link-glyph--green">read more<span class="link__glyph"></span></a>
+                  </div>
+               </div>
+               
+               <div class="services__holder">
+                  <div class="img services__img">
+                     <img class='img__src' src="images/banner3.jpg" alt="banner">
+                     <div class='img__overlay'></div>
+                  </div>
+                  
+                  <div class="services__manifest card card--dark">
+                     <h4 class="services__name card__title">classic hair cut</h4>
+                     <p class="services__manifest__text card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam, maxime vel non facere quas?</p>
+                     <a href="#" class="link-glyph link-glyph--green">read more<span class="link__glyph"></span></a>
+                  </div>
+               </div>
+               
+
+               <div class="services__holder">
+                  <div class="services__manifest card card--dark">
+                     <h4 class="services__name card__title">classic hair cut</h4>
+                     <p class="services__manifest__text card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam, maxime vel non facere quas?</p>
+                     <a href="#" class="link-glyph link-glyph--green">read more<span class="link__glyph"></span></a>
+                  </div>
+                  
+                  <div class="img services__img">
+                     <img class='img__src' src="images/banner4.jpg" alt="banner">
+                     <div class='img__overlay'></div>
+                  </div>
+               </div>
+
+               <div class="services__holder">
+                  <div class="services__manifest card card--dark">
+                     <h4 class="services__name card__title">classic hair cut</h4>
+                     <p class="services__manifest__text card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam, maxime vel non facere quas?</p>
+                     <a href="#" class="link-glyph link-glyph--green">read more<span class="link__glyph"></span></a>
+                  </div>
+                  
+                  <div class="img services__img">
+                     <img class='img__src' src="images/barber3.jpg" alt="banner">
+                     <div class='img__overlay'></div>
+                  </div>
+               </div>
+
+               <div class="services__holder">
+                  <div class="services__manifest card card--dark">
+                     <h4 class="services__name card__title">classic hair cut</h4>
+                     <p class="services__manifest__text card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem numquam, maxime vel non facere quas?</p>
+                     <a href="#" class="link-glyph link-glyph--green">read more<span class="link__glyph"></span></a>
+                  </div>
+                  
+                  <div class="img services__img">
+                     <img class='img__src' src="images/banner1.jpg" alt="banner">
+                     <div class='img__overlay'></div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+    
+         <div id='team' class="titled team container">
+            <h3 class="titled__heading team__heading">our barbers</h3>
+
+            <!-- div.pcard*4>div.img.pcard-photo>img.img__img^h4.pcard__name+span.pcard__job+div.link-list>a.link-list__link*3>span.link-list__glyph[href='#'] -->
+         
+            <div class="pcard team__member">
+               <div class="img pcard-photo">
+                  <img src="images/barber1.jpg" alt="barber" class="img__src">
+                  <div class="img__overlay"></div>
+               </div>
+               <h4 class="pcard__name">david alison</h4>
+               <span class="pcard__job">barber</span>
+               <div class="link-list">
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-facebook"></i>
+                  </a>
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-twitter"></i>
+                  </a>
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-youtube"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="pcard team__member">
+               <div class="img pcard-photo">
+                  <img src="images/barber2.jpg" alt="barber" class="img__src">
+                  <div class="img__overlay"></div>
+               </div>
+               <h4 class="pcard__name">david alison</h4>
+               <span class="pcard__job">barber</span>
+               <div class="link-list">
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-facebook"></i>
+                  </a>
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-twitter"></i>
+                  </a>
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-youtube"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="pcard team__member">
+               <div class="img pcard-photo">
+                  <img src="images/barber3.jpg" alt="barber" class="img__src">
+                  <div class="img__overlay"></div>
+               </div>
+               <h4 class="pcard__name">david alison</h4>
+               <span class="pcard__job">barber</span>
+               <div class="link-list">
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-facebook"></i>
+                  </a>
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-twitter"></i>
+                  </a>
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-youtube"></i>
+                  </a>
+               </div>
+            </div>
+
+            <div class="pcard team__member">
+               <div class="img pcard-photo">
+                  <img src="images/barber4.jpg" alt="barber" class="img__src">
+                  <div class="img__overlay"></div>
+               </div>
+               <h4 class="pcard__name">david alison</h4>
+               <span class="pcard__job">barber</span>
+               <div class="link-list">
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-facebook"></i>
+                  </a>
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-twitter"></i>
+                  </a>
+                  <a href="#" class="link-list__link link-list--bordered link-list--green">
+                     <i class="link-list__glyph fa fa-youtube"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+
+         <div id='testimonial' class="titled testimonial full-width">
+            <h3 class="titled__heading testimonial__heading">customers words</h3>
+            
+            <!-- this part need more work and need slider implementation -->
+            <div class="review_card">
+               <p class="review__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum repellat, sequi, labore repellendus laborum exercitationem possimus doloribus adipisci numquam enim eum totam, ipsam quibusdam perspiciatis!</p>
+               <span class="review__reviewer"></span>
+               <div class="img img--circled img--borderd">
+                  <img class="img__src" src="" alt="">
+               </div>
+            </div>
+
+         </div>
+
+         <!-- <div class="titled pricing full-width">pricing</div> -->
+
+         <div id="locate" class="titled locate">
+            <div id='map' class="locate__map"></div>
+            <div class="locate__info">
+               <div class="locate__address">
+                  <h3 class="heading heading--dark-bg heading--sm">address</h3>
+                  <div class="locate__cell info-unit">
+                     <span class="locate__glyph fa fa-map"> </span> 123 Street Seattle WA 99999 Paris, France.</div>
+                  <div class="locate__cell info-unit"><span class="locate__glyph fa fa-phone"> </span> +12 345 567 7890</div>
+                  <div class="locate__cell info-unit"><span class="locate__glyph fa fa-envelope"> </span> mail@example.com</div>
+               </div>
+               <div class="locate__opening">
+                  <h3 class="heading heading--dark-bg heading--sm">opening hours</h3>
+                  <div class="locate__hours info-unit"><span class="locate__glyph info-unit__glyph fa fa-clock-o"></span> Monday – Friday : 9am - 6pm</div>
+                  <div class="locate__hours info-unit"><span class="locate__glyph info-unit__glyph fa fa-clock-o"></span> Saturday and Sunday : 10am - 4pm</div>
+               </div>
+            </div>
+         </div>
+
+         <div id="booking" class="titled booking">
+            <div class="container">
+               <h3 class="titled__heading titled__heading--dark-bg">make an appointment</h3>
+               <form class='booking__form' action="" method="GET">
+                  <input type="text" class="input booking__name" placeholder="your name">
+                  <input type="email" class="input booking__email" placeholder="email">
+                  <input type="phone" class="input booking__phone" placeholder="phone number">
+                  <input type="text" class="input booking__date" placeholder="appointment date">
+                  <textarea name="message" id="" cols="30" rows="10" class="input input--text-area booking__message" placeholder="your message"></textarea>
+                  <button class="btn input input--btn" type="submit">make an appointment</button>
+               </form>
+            </div>
+         </div>
+      </main>
+
+      <footer class="footer">
+        
+         <div class="logo">
+            <div class="logo__glyph"></div>
+            <div class="logo__brand">barber</div>
+            <div class="logo__phrase">best hair salon</div>
+         </div>
+
+         <div id="subscribe" class="titled subscribe">
+            <h3 class="titled__heading titled__heading--dark-bg titled__heading--beta-color subscribe__heading">subscribe us</h3>
+            <p class="subscribe__text">subscribe to our Newsletter to get latest offers from our Barber.</p>
+            
+            <form action="" class="subscribe__form">
+               <input type="email" class="subscribe__input-email" placeholder="enter your email...">
+               
+               <button class="subscribe__submit" type="submit">
+                  <i class="fa fa-send"></i>
+               </button>
+            </form>
+         </div>
+
+         <div class="link-list">
+            <a href="#" class="link-list__link "><span class="link-list__glyph link-list__glyph--dark link-list__glyph--circ fa fa-facebook"></span></a>
+            <a href="#" class="link-list__link "><span class="link-list__glyph link-list__glyph--dark link-list__glyph--circ fa fa-twitter"></span></a>
+            <a href="#" class="link-list__link "><span class="link-list__glyph link-list__glyph--dark link-list__glyph--circ fa fa-rss"></span></a>
+            <a href="#" class="link-list__link "><span class="link-list__glyph link-list__glyph--dark link-list__glyph--circ fa fa-google-plus"></span></a>
+            <a href="#" class="link-list__link "><span class="link-list__glyph link-list__glyph--dark link-list__glyph--circ fa fa-linkedin"></span></a>
+         </div>
+  
+         &copy; 2020 Barber. All Rights Reserved | Design by <span class='footer__standout'>W3</span>
+      </footer>
+
+
+      <!-- <script src="js/bootstrap.min.js"></script> -->
+      <script src="./js/main.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhSZN_JPIrOGJtuCaHyWygubg8KdfhUi0&callback=initMap"></script>
+
+   </body>
+</html>
